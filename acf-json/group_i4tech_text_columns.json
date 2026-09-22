@@ -1,0 +1,86 @@
+{
+    "key": "group_i4tech_text_columns",
+    "title": "Text columns",
+    "fields": [
+        {
+            "key": "field_i4tech_text_columns_heading",
+            "label": "Nagłówek",
+            "name": "text_columns_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment i wybierz Format → Wyróżnienie żółte."
+        },
+        {
+            "key": "field_i4tech_text_columns_text",
+            "label": "Tekst prawej kolumny",
+            "name": "text_columns_text",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_i4tech_text_columns_show_items",
+            "label": "Elementy pod kolumnami",
+            "name": "text_columns_show_items",
+            "type": "true_false",
+            "message": "Dodaj elementy pod spodem",
+            "default_value": 0,
+            "ui": 0
+        },
+        {
+            "key": "field_i4tech_text_columns_items",
+            "label": "Elementy",
+            "name": "text_columns_items",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Dodaj element",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_i4tech_text_columns_show_items",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_text_columns_item_title",
+                    "label": "Tytuł",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_i4tech_text_columns_item_text",
+                    "label": "Tekst",
+                    "name": "text",
+                    "type": "wysiwyg",
+                    "tabs": "visual",
+                    "toolbar": "i4tech",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/text-columns"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

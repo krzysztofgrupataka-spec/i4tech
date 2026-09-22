@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/image-text-column",
+  "title": "Image text column",
+  "category": "design",
+  "icon": "align-pull-left",
+  "description": "Two-column section with heading, text, CTA and image.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/linked-technologies",
+  "title": "Linked Technologies",
+  "category": "design",
+  "icon": "networking",
+  "description": "Heading and an accordion of selected technologies.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

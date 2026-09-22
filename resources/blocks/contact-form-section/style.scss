@@ -1,0 +1,204 @@
+.contact-form-section-block {
+  color: var(--color-foreground);
+}
+
+.contact-form-section-block__inner {
+  background: var(--color-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form-section-block__intro {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding-block: clamp(4rem, 7vw, 7.5rem);
+  padding-inline: max(var(--container-gutter), calc((100vw - var(--container-width)) / 2)) clamp(3rem, 6.4vw, 7.6875rem);
+}
+
+.contact-form-section-block__intro-inner { inline-size: min(100%, 37.875rem); }
+
+.contact-form-section-block__heading {
+  font-size: clamp(2.5rem, 3.47vw, 3.125rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.contact-form-section-block__text {
+  font-size: clamp(1.125rem, 1.67vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.4;
+  margin-block-start: 1.875rem;
+}
+
+.contact-form-section-block__text p { margin: 0; }
+
+.contact-form-section-block__form-panel {
+  align-items: center;
+  background: var(--color-white);
+  display: flex;
+  padding-block: clamp(3rem, 6.25vw, 5.625rem);
+  padding-inline: clamp(3rem, 7.3vw, 8.75rem) max(var(--container-gutter), calc((100vw - var(--container-width)) / 2));
+}
+
+.contact-form-section-block__form {
+  inline-size: min(100%, 37.75rem);
+}
+
+.contact-form-section-block .contact-form-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  inline-size: 100%;
+}
+
+.contact-form-section-block .wpcf7-form p {
+  margin: 0;
+}
+
+.contact-form-section-block .contact-form-row {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-form-section-block .contact-form-field,
+.contact-form-section-block .contact-form-message {
+  min-inline-size: 0;
+}
+
+.contact-form-section-block .wpcf7-form-control-wrap {
+  display: block;
+}
+
+.contact-form-section-block :is(input:not([type="checkbox"], [type="radio"], [type="submit"]), textarea, select) {
+  background: transparent;
+  border: 1px solid var(--color-foreground);
+  border-radius: 1.25rem;
+  color: var(--color-foreground);
+  font: inherit;
+  inline-size: 100%;
+  min-block-size: 3.3125rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.contact-form-section-block :is(input, textarea)::placeholder {
+  color: var(--color-foreground);
+  opacity: 1;
+}
+
+.contact-form-section-block textarea {
+  block-size: 8.1875rem;
+  border-radius: 1.25rem;
+  resize: vertical;
+}
+
+.contact-form-section-block .contact-form-consent {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.contact-form-section-block .contact-form-consent .wpcf7-list-item > label {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.9375rem;
+}
+
+.contact-form-section-block .contact-form-consent input[type="checkbox"] {
+  appearance: none;
+  background: var(--color-white);
+  block-size: 1.25rem;
+  border: 1px solid var(--color-foreground);
+  border-radius: 0;
+  flex: 0 0 1.25rem;
+  inline-size: 1.25rem;
+  margin: 0;
+}
+
+.contact-form-section-block .contact-form-consent input[type="checkbox"]:checked {
+  background: var(--color-primary);
+  box-shadow: inset 0 0 0 0.25rem var(--color-white);
+}
+
+.contact-form-section-block .contact-form-consent a {
+  color: inherit;
+  font-weight: 700;
+}
+
+.contact-form-section-block .contact-form-submit {
+  align-items: center;
+  display: flex;
+  inline-size: fit-content;
+  position: relative;
+}
+
+.contact-form-section-block input[type="submit"] {
+  background: var(--color-primary);
+  border: 0;
+  border-radius: var(--radius-pill);
+  color: var(--color-foreground);
+  cursor: pointer;
+  font: 700 1.125rem/1.2 var(--font-base);
+  min-block-size: 3.3125rem;
+  padding-inline: 1.25rem;
+}
+
+.contact-form-section-block .contact-form-arrow {
+  align-items: center;
+  background: var(--color-primary);
+  block-size: 3.3125rem;
+  border-radius: 50%;
+  display: inline-flex;
+  font-size: 1.5rem;
+  inline-size: 3.3125rem;
+  justify-content: center;
+  line-height: 1;
+}
+
+.contact-form-section-block .wpcf7-spinner {
+  inset-inline-start: calc(100% + 0.75rem);
+  margin: 0;
+  position: absolute;
+}
+
+.contact-form-section-block .wpcf7-list-item {
+  margin: 0;
+}
+
+.contact-form-section-block .wpcf7-not-valid-tip,
+.contact-form-section-block .wpcf7-response-output {
+  font-size: var(--text-body-sm);
+}
+
+.contact-form-section-block__placeholder {
+  margin: 0;
+  padding: 2rem;
+}
+
+@media (width < 64rem) {
+  .contact-form-section-block__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-section-block__intro {
+    justify-content: flex-start;
+    padding-inline: var(--container-gutter);
+  }
+
+  .contact-form-section-block__form-panel {
+    padding-inline: var(--container-gutter);
+  }
+}
+
+@media (width < 40rem) {
+  .contact-form-section-block__intro,
+  .contact-form-section-block__form-panel {
+    padding-block: 3rem;
+  }
+
+  .contact-form-section-block .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,7 @@
+.section {
+  padding-block: clamp(3rem, 8vw, 7rem);
+}
+
+.section--surface {
+  background: var(--color-surface);
+}

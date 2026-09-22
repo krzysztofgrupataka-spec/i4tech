@@ -1,0 +1,48 @@
+{
+    "key": "group_i4tech_solutions_grid",
+    "title": "Solutions grid",
+    "fields": [
+        {
+            "key": "field_i4tech_solutions_grid_heading",
+            "label": "Nagłówek",
+            "name": "solutions_grid_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_solutions_grid_heading_highlight",
+            "label": "Nagłówek - wyróżnienie",
+            "name": "solutions_grid_heading_highlight",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_solutions_grid_items",
+            "label": "Rozwiązania",
+            "name": "solutions_grid_items",
+            "type": "relationship",
+            "post_type": [
+                "solution"
+            ],
+            "filters": [
+                "search"
+            ],
+            "return_format": "id",
+            "min": 0,
+            "max": 8
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/solutions-grid"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

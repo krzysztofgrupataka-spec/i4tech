@@ -1,0 +1,79 @@
+{
+    "key": "group_i4tech_case_study_hero",
+    "title": "Case study hero",
+    "fields": [
+        {
+            "key": "field_i4tech_case_study_hero_heading",
+            "label": "Nagłówek",
+            "name": "case_study_hero_heading",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": "",
+            "required": 1
+        },
+        {
+            "key": "field_i4tech_case_study_hero_sector",
+            "label": "Sektor",
+            "name": "case_study_hero_sector",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_case_study_hero_project_type",
+            "label": "Typ projektu",
+            "name": "case_study_hero_project_type",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_case_study_hero_cooperation_subject",
+            "label": "Przedmiot współpracy",
+            "name": "case_study_hero_cooperation_subject",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_case_study_hero_solutions",
+            "label": "Zastosowane rozwiązania i technologie",
+            "name": "case_study_hero_solutions",
+            "type": "relationship",
+            "post_type": [
+                "solution",
+                "technology"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "return_format": "object"
+        },
+        {
+            "key": "field_i4tech_case_study_hero_image",
+            "label": "Zdjęcie",
+            "name": "case_study_hero_image",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "required": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/case-study-hero"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

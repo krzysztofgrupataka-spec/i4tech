@@ -1,0 +1,22 @@
+{
+  "apiVersion": 3,
+  "name": "i4tech/section",
+  "title": "Section",
+  "category": "design",
+  "icon": "welcome-widgets-menus",
+  "description": "Generic content section with heading and lead text.",
+  "textdomain": "i4tech",
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "heading": { "type": "string", "default": "Section heading" },
+    "lead": { "type": "string", "default": "Use this block to introduce a content area." },
+    "tone": { "type": "string", "default": "default" }
+  }
+}

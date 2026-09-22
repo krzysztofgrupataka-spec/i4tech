@@ -1,0 +1,37 @@
+{
+    "key": "group_i4tech_page_settings",
+    "title": "Ustawienia strony",
+    "fields": [
+        {
+            "key": "field_i4tech_page_navigation_variant",
+            "label": "Wariant nagłówka",
+            "name": "page_navigation_variant",
+            "type": "button_group",
+            "instructions": "Biały nagłówek wyświetla nawigację nad treścią, tak jak na stronie „Jak działamy”.",
+            "choices": {
+                "auto": "Automatycznie",
+                "light": "Jasne linki na hero",
+                "dark": "Ciemne linki na hero",
+                "solid": "Biały nagłówek"
+            },
+            "default_value": "auto",
+            "return_format": "value",
+            "layout": "vertical"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

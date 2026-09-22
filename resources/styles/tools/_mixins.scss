@@ -1,0 +1,31 @@
+@mixin focus-ring {
+  outline: 3px solid color-mix(in srgb, var(--color-yellow-500) 70%, white);
+  outline-offset: 3px;
+}
+
+@mixin type-style($size, $weight: 400, $line-height: normal) {
+  font-family: var(--font-base);
+  font-size: var(--text-#{$size});
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin card-shell {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint == md {
+    @media (width >= 48rem) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media (width >= 75rem) {
+      @content;
+    }
+  }
+}

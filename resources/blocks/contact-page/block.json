@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/contact-page",
+  "title": "Contact page",
+  "category": "design",
+  "icon": "email-alt",
+  "description": "Dane kontaktowe i formularz strony Kontakt.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false
+  }
+}

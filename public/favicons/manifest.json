@@ -1,0 +1,20 @@
+{
+  "name": "i4tech",
+  "short_name": "i4tech",
+  "icons": [
+    {
+      "src": "/wp-content/themes/i4tech/public/favicons/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/wp-content/themes/i4tech/public/favicons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

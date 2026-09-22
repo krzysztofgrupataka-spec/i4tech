@@ -1,0 +1,56 @@
+{
+    "key": "group_i4tech_contact_form_section",
+    "title": "Contact form section",
+    "fields": [
+        {
+            "key": "field_i4tech_contact_form_heading",
+            "label": "Nagłówek",
+            "name": "contact_form_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment nagłówka i wybierz biały kolor tekstu z palety."
+        },
+        {
+            "key": "field_i4tech_contact_form_text",
+            "label": "Tekst",
+            "name": "contact_form_text",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_i4tech_contact_form_form",
+            "label": "Formularz",
+            "name": "contact_form_form",
+            "type": "post_object",
+            "post_type": [
+                "wpcf7_contact_form"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "return_format": "id",
+            "ui": 1,
+            "allow_null": 1,
+            "instructions": "Wybierz formularz utworzony w Contact Form 7."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/contact-form-section"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

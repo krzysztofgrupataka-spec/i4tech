@@ -1,0 +1,13 @@
+.section-block {
+  padding-block: clamp(3rem, 8vw, 7rem);
+}
+
+.section-block--surface {
+  background: var(--color-surface);
+}
+
+.section-block p {
+  color: var(--color-muted);
+  font-size: 1.125rem;
+  max-inline-size: 52rem;
+}

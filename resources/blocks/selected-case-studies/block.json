@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/selected-case-studies",
+  "title": "Selected case studies",
+  "category": "design",
+  "icon": "portfolio",
+  "description": "Featured layout with three selected case studies.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

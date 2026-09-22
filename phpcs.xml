@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset name="i4tech Sage Theme">
+  <description>WordPress Coding Standards for the i4tech Sage starter theme.</description>
+  <file>app</file>
+  <file>resources/views</file>
+  <file>functions.php</file>
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>node_modules/*</exclude-pattern>
+  <exclude-pattern>public/build/*</exclude-pattern>
+  <arg name="extensions" value="php"/>
+  <arg value="sp"/>
+  <config name="testVersion" value="8.3-"/>
+  <rule ref="WordPress"/>
+  <rule ref="WordPress-Extra"/>
+  <rule ref="WordPress-Docs"/>
+  <rule ref="PHPCompatibilityWP"/>
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array" value="i4tech"/>
+    </properties>
+  </rule>
+</ruleset>

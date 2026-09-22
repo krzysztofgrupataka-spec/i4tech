@@ -1,0 +1,67 @@
+@use "../tools/mixins";
+
+.component-showcase {
+  overflow: hidden;
+}
+
+.component-showcase__group {
+  border-block-start: 1px solid var(--color-border);
+  display: grid;
+  gap: 1.5rem;
+  margin-block-start: clamp(2rem, 5vw, 4rem);
+  padding-block-start: 1.5rem;
+}
+
+.component-showcase__label {
+  color: var(--color-muted);
+  font-size: var(--text-body-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.component-showcase__row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.component-showcase__inline-icon {
+  align-items: center;
+  color: var(--color-foreground);
+  display: inline-flex;
+  justify-content: center;
+  min-block-size: 3.3125rem;
+  min-inline-size: 3.3125rem;
+}
+
+.component-showcase__split {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.component-showcase__cases {
+  display: grid;
+  gap: 1.875rem;
+  margin-block-start: clamp(2rem, 5vw, 4rem);
+}
+
+.component-showcase__case-stack {
+  display: grid;
+  gap: 1.875rem;
+}
+
+@include mixins.media(lg) {
+  .component-showcase__group {
+    grid-template-columns: 12rem 1fr;
+  }
+
+  .component-showcase__split {
+    align-items: center;
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.8fr);
+  }
+
+  .component-showcase__cases {
+    grid-template-columns: minmax(0, 1.55fr) minmax(20rem, 0.75fr);
+  }
+}

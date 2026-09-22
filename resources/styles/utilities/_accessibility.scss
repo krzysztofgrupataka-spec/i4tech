@@ -1,0 +1,22 @@
+.skip-link {
+  background: var(--color-foreground);
+  color: var(--color-background);
+  inset-block-start: 0.5rem;
+  inset-inline-start: 0.5rem;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  transform: translateY(-150%);
+  z-index: 100;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.screen-reader-text {
+  block-size: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  inline-size: 1px;
+  overflow: hidden;
+  position: absolute;
+}

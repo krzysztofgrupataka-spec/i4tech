@@ -1,0 +1,55 @@
+{
+    "key": "group_i4tech_materials_form_section",
+    "title": "Materials form section",
+    "fields": [
+        {
+            "key": "field_i4tech_materials_form_heading",
+            "label": "Tytuł",
+            "name": "materials_form_heading",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_i4tech_materials_form_text",
+            "label": "Tekst nad formularzem",
+            "name": "materials_form_text",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_i4tech_materials_form_form",
+            "label": "Formularz",
+            "name": "materials_form_form",
+            "type": "post_object",
+            "post_type": [
+                "wpcf7_contact_form"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "return_format": "id",
+            "ui": 1,
+            "allow_null": 1,
+            "instructions": "Wybierz formularz utworzony w Contact Form 7."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/materials-form-section"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

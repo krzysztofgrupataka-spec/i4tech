@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/opinions-elements",
+  "title": "Opinions elements",
+  "category": "design",
+  "icon": "format-quote",
+  "description": "Section with a heading and customer opinion cards.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 3,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/highlighted-text",
+  "title": "Highlighted text",
+  "category": "design",
+  "icon": "editor-quote",
+  "description": "Highlighted text panel aligned to the left or right.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

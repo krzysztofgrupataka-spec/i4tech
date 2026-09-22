@@ -1,0 +1,59 @@
+{
+    "key": "group_i4tech_selected_files",
+    "title": "Selected files",
+    "fields": [
+        {
+            "key": "field_i4tech_selected_files_heading",
+            "label": "Nagłówek",
+            "name": "selected_files_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_selected_files_items",
+            "label": "Pliki",
+            "name": "selected_files_items",
+            "type": "repeater",
+            "layout": "block",
+            "min": 1,
+            "button_label": "Dodaj plik",
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_selected_files_item_file",
+                    "label": "Plik",
+                    "name": "file",
+                    "type": "file",
+                    "return_format": "array",
+                    "library": "all"
+                },
+                {
+                    "key": "field_i4tech_selected_files_item_action",
+                    "label": "Akcja",
+                    "name": "action",
+                    "type": "button_group",
+                    "choices": {
+                        "open": "Otwórz w przeglądarce",
+                        "download": "Pobierz plik"
+                    },
+                    "default_value": "open",
+                    "return_format": "value",
+                    "layout": "horizontal"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/selected-files"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

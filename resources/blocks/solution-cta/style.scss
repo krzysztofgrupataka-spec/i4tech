@@ -1,0 +1,28 @@
+.solution-cta-block {
+  background: var(--color-gray-50);
+  color: var(--color-foreground);
+  padding-block: 3.125rem;
+}
+
+.solution-cta-block__inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.solution-cta-block__heading {
+  font-size: clamp(2rem, 2.92vw, 2.625rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  max-inline-size: 77.8125rem;
+  text-align: center;
+}
+
+.solution-cta-block__placeholder {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}

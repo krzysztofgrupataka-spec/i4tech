@@ -1,0 +1,20 @@
+.cta-block {
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.cta-block__inner {
+  align-items: center;
+  background: var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-background);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.cta-block p {
+  color: color-mix(in srgb, var(--color-background) 82%, transparent);
+  margin: 0;
+}

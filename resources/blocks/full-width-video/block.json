@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/full-width-video",
+  "title": "Full Width Image/Video",
+  "category": "design",
+  "icon": "format-video",
+  "description": "Full-width visual section with a background video or image, heading and CTA.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

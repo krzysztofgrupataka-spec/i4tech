@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "i4tech/faq",
+  "title": "FAQ",
+  "category": "design",
+  "icon": "editor-help",
+  "description": "Accessible FAQ accordion using native details elements.",
+  "textdomain": "i4tech",
+  "supports": {
+    "align": ["wide"],
+    "anchor": true
+  },
+  "attributes": {
+    "heading": { "type": "string", "default": "Frequently asked questions" },
+    "items": {
+      "type": "array",
+      "default": [
+        { "question": "Can I add more questions?", "answer": "Yes. Use the block controls in the editor." },
+        { "question": "Is this accessible?", "answer": "The frontend uses native details and summary elements." }
+      ]
+    }
+  }
+}

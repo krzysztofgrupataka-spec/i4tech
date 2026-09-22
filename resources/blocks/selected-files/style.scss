@@ -1,0 +1,99 @@
+.selected-files-block {
+  background: var(--color-white);
+  color: var(--color-foreground);
+  padding-block: clamp(4rem, 4.69vw, 5.625rem) clamp(4rem, 7vw, 7rem);
+}
+
+.selected-files-block__heading {
+  font-size: clamp(2.5rem, 3.82vw, 3.4375rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+}
+
+.selected-files-block__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.125rem;
+  justify-content: center;
+  margin-block-start: clamp(2rem, 2.34vw, 2.8125rem);
+}
+
+.selected-files-block__link {
+  align-items: center;
+  background: var(--color-yellow-400);
+  border-radius: var(--radius-pill);
+  color: var(--color-foreground);
+  display: inline-flex;
+  font-size: var(--text-body-lg);
+  font-weight: 700;
+  gap: 0.625rem;
+  justify-content: center;
+  min-block-size: 3.3125rem;
+  padding: 0.9375rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-standard);
+}
+
+.selected-files-block__link:hover,
+.selected-files-block__link:focus-visible {
+  background: var(--color-yellow-300);
+  color: var(--color-foreground);
+  text-decoration: none;
+}
+
+.selected-files-block__link:focus-visible {
+  outline: 0.1875rem solid var(--color-foreground);
+  outline-offset: 0.1875rem;
+}
+
+.selected-files-block__icon {
+  block-size: 1.125rem;
+  display: block;
+  flex: 0 0 auto;
+  inline-size: 1.625rem;
+  object-fit: contain;
+  transition: transform var(--transition-standard);
+}
+
+.selected-files-block__icon--open {
+  inline-size: 1.125rem;
+}
+
+.selected-files-block__link:hover .selected-files-block__icon--download,
+.selected-files-block__link:focus-visible .selected-files-block__icon--download {
+  transform: translateY(0.125rem);
+}
+
+.selected-files-block__link:hover .selected-files-block__icon--open,
+.selected-files-block__link:focus-visible .selected-files-block__icon--open {
+  transform: translate(0.125rem, -0.125rem);
+}
+
+.selected-files-block__placeholder {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (width < 30rem) {
+  .selected-files-block {
+    padding-block: 3.5rem;
+  }
+
+  .selected-files-block__heading {
+    font-size: 2.25rem;
+  }
+
+  .selected-files-block__items {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .selected-files-block__link {
+    inline-size: 100%;
+    overflow-wrap: anywhere;
+  }
+}

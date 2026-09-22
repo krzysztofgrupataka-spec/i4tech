@@ -1,0 +1,74 @@
+{
+    "key": "group_i4tech_blog_table",
+    "title": "Blog table",
+    "fields": [
+        {
+            "key": "field_i4tech_blog_table_columns",
+            "label": "Kolumny",
+            "name": "blog_table_columns",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Dodaj kolumnę",
+            "min": 2,
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_blog_table_column_heading",
+                    "label": "Nagłówek",
+                    "name": "heading",
+                    "type": "text",
+                    "required": 1
+                }
+            ]
+        },
+        {
+            "key": "field_i4tech_blog_table_rows",
+            "label": "Wiersze",
+            "name": "blog_table_rows",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Dodaj wiersz",
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_blog_table_row_cells",
+                    "label": "Komórki",
+                    "name": "cells",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Dodaj komórkę",
+                    "instructions": "Dodaj tyle komórek, ile tabela ma kolumn. Nadmiarowe komórki zostaną pominięte.",
+                    "sub_fields": [
+                        {
+                            "key": "field_i4tech_blog_table_cell_content",
+                            "label": "Treść",
+                            "name": "content",
+                            "type": "textarea",
+                            "rows": 2,
+                            "new_lines": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_i4tech_blog_table_caption",
+            "label": "Podpis tabeli",
+            "name": "blog_table_caption",
+            "type": "text"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/blog-table"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

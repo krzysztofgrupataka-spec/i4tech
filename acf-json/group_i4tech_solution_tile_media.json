@@ -1,0 +1,70 @@
+{
+    "key": "group_i4tech_solution_tile_media",
+    "title": "Solution tile media",
+    "fields": [
+        {
+            "key": "field_i4tech_solution_tile_media_type",
+            "label": "Media na hover",
+            "name": "solution_tile_media_type",
+            "type": "select",
+            "choices": {
+                "image": "Zdjęcie",
+                "video": "Film"
+            },
+            "default_value": "image",
+            "ui": 1,
+            "return_format": "value"
+        },
+        {
+            "key": "field_i4tech_solution_tile_image",
+            "label": "Zdjęcie na hover",
+            "name": "solution_tile_image",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_i4tech_solution_tile_media_type",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_i4tech_solution_tile_video",
+            "label": "Film na hover",
+            "name": "solution_tile_video",
+            "type": "file",
+            "return_format": "id",
+            "library": "all",
+            "mime_types": "mp4,webm",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_i4tech_solution_tile_media_type",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "solution"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

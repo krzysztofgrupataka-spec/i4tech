@@ -1,0 +1,46 @@
+{
+  "name": "i4tech/sage-wordpress-theme",
+  "type": "wordpress-theme",
+  "description": "Modern WordPress starter theme based on Roots Sage, Blade, Acorn, Vite, TypeScript and SCSS.",
+  "license": "MIT",
+  "require": {
+    "php": "^8.3",
+    "roots/acorn": "^5.0"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpstan/phpstan": "^2.1",
+    "squizlabs/php_codesniffer": "^3.10",
+    "wp-coding-standards/wpcs": "^3.1",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
+    ],
+    "lint:php": "phpcs",
+    "stan": "phpstan analyse"
+  },
+  "config": {
+    "allow-plugins": {
+      "roots/acorn": true,
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

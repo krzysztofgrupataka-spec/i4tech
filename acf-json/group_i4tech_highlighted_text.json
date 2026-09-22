@@ -1,0 +1,60 @@
+{
+    "key": "group_i4tech_highlighted_text",
+    "title": "Highlighted text",
+    "fields": [
+        {
+            "key": "field_i4tech_highlighted_text_content",
+            "label": "Tekst",
+            "name": "highlighted_text_content",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Użyj kursywy i pogrubienia, aby wyróżnić fragmenty tekstu."
+        },
+        {
+            "key": "field_i4tech_highlighted_text_alignment",
+            "label": "Wyrównanie",
+            "name": "highlighted_text_alignment",
+            "type": "button_group",
+            "choices": {
+                "left": "Do lewej",
+                "right": "Do prawej"
+            },
+            "default_value": "left",
+            "return_format": "value",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_i4tech_highlighted_text_background",
+            "label": "Kolor tła",
+            "name": "highlighted_text_background",
+            "type": "button_group",
+            "choices": {
+                "beige": "Beżowy",
+                "white": "Biały",
+                "yellow": "Żółty",
+                "dark": "Ciemny"
+            },
+            "default_value": "beige",
+            "return_format": "value",
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/highlighted-text"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

@@ -1,0 +1,19 @@
+.homepage-technologies-block {
+  background: var(--color-gray-100);
+  padding-block: clamp(4rem, 7vw, 5.625rem);
+}
+
+.homepage-technologies-block--placeholder {
+  padding: 2rem;
+}
+
+.homepage-technologies-block__placeholder {
+  margin: 0;
+  text-align: center;
+}
+
+@media (width <= 35.99rem) {
+  .homepage-technologies-block {
+    padding-block: 3rem;
+  }
+}

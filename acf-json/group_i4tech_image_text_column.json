@@ -1,0 +1,110 @@
+{
+    "key": "group_i4tech_image_text_column",
+    "title": "Image text column",
+    "fields": [
+        {
+            "key": "field_i4tech_image_text_column_heading",
+            "label": "Nagłówek",
+            "name": "image_text_column_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment i wybierz Format → Wyróżnienie żółte."
+        },
+        {
+            "key": "field_i4tech_image_text_column_heading_highlight",
+            "label": "Żółty fragment nagłówka",
+            "name": "image_text_column_heading_highlight",
+            "type": "text",
+            "wrapper": {
+                "class": "acf-hidden"
+            },
+            "instructions": "Wpisz dokładnie fragment nagłówka, który ma być wyświetlony na żółto."
+        },
+        {
+            "key": "field_i4tech_image_text_column_text",
+            "label": "Tekst",
+            "name": "image_text_column_text",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Aby utworzyć wyróżniony akapit z żółtą linią, zaznacz tekst i kliknij ikonę cytatu. Pierwsze zdanie możesz dodatkowo pogrubić."
+        },
+        {
+            "key": "field_i4tech_image_text_column_button",
+            "label": "CTA button",
+            "name": "image_text_column_button",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_i4tech_image_text_column_image",
+            "label": "Obraz",
+            "name": "image_text_column_image",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_i4tech_image_text_column_layout",
+            "label": "Układ",
+            "name": "image_text_column_layout",
+            "type": "select",
+            "choices": {
+                "text-left": "Tekst z lewej, obraz z prawej",
+                "image-left": "Obraz z lewej, tekst z prawej"
+            },
+            "default_value": "text-left",
+            "return_format": "value",
+            "ui": 1
+        },
+        {
+            "key": "field_i4tech_image_text_column_padding_top",
+            "label": "Padding od góry",
+            "name": "image_text_column_padding_top",
+            "type": "select",
+            "choices": {
+                "full": "1",
+                "half": "1/2",
+                "none": "0"
+            },
+            "default_value": "full",
+            "return_format": "value",
+            "ui": 1
+        },
+        {
+            "key": "field_i4tech_image_text_column_padding_bottom",
+            "label": "Padding od dołu",
+            "name": "image_text_column_padding_bottom",
+            "type": "select",
+            "choices": {
+                "full": "1",
+                "half": "1/2",
+                "none": "0"
+            },
+            "default_value": "full",
+            "return_format": "value",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/image-text-column"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

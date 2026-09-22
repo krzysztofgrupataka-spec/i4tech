@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/text-tiles-elements",
+  "title": "Text tiles elements",
+  "category": "design",
+  "icon": "grid-view",
+  "description": "Section with a highlighted heading and text tiles.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

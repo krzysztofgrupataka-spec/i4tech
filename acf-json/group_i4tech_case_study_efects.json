@@ -1,0 +1,42 @@
+{
+    "key": "group_i4tech_case_study_efects",
+    "title": "Case study efects",
+    "fields": [
+        {
+            "key": "field_i4tech_case_study_efects_heading",
+            "label": "Nagłówek",
+            "name": "case_study_efects_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "default_value": "<p>Efekty</p>"
+        },
+        {
+            "key": "field_i4tech_case_study_efects_text",
+            "label": "Tekst",
+            "name": "case_study_efects_text",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/case-study-efects"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

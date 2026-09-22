@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/image-hero",
+  "title": "Image hero",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "Image hero with heading and two CTA buttons.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

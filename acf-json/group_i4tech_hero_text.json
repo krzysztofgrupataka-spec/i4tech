@@ -1,0 +1,64 @@
+{
+    "key": "group_i4tech_hero_text",
+    "title": "Hero text",
+    "fields": [
+        {
+            "key": "field_i4tech_hero_text_heading",
+            "label": "Nagłówek",
+            "name": "hero_text_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment i wybierz Format → Wyróżnienie żółte."
+        },
+        {
+            "key": "field_i4tech_hero_text_text",
+            "label": "Tekst",
+            "name": "hero_text_text",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_i4tech_hero_text_cta",
+            "label": "CTA",
+            "name": "hero_text_cta",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_i4tech_hero_text_background",
+            "label": "Kolor tła",
+            "name": "hero_text_background",
+            "type": "button_group",
+            "choices": {
+                "white": "Biały",
+                "beige": "Beżowy",
+                "yellow": "Żółty",
+                "dark": "Ciemny"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/hero-text"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

@@ -1,0 +1,125 @@
+.standard-and-procedures-block {
+  background: linear-gradient(169deg, var(--color-white) 8%, var(--color-gray-100) 72%);
+  color: var(--color-foreground);
+  padding-block: clamp(4rem, 6.3vw, 7.5rem) clamp(4rem, 5.7vw, 6.875rem);
+}
+
+.standard-and-procedures-block__layout {
+  display: grid;
+  gap: clamp(3rem, 7.5vw, 9rem);
+  grid-template-columns: minmax(0, 1fr) minmax(25rem, 0.94fr);
+}
+
+.standard-and-procedures-block__content {
+  max-inline-size: 37.6875rem;
+}
+
+.standard-and-procedures-block__heading {
+  font-size: clamp(2.5rem, 3.82vw, 3.4375rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 clamp(2rem, 2.5vw, 3rem);
+  max-inline-size: 28rem;
+}
+
+.standard-and-procedures-block__highlighted {
+  border-inline-start: 0.5625rem solid var(--color-yellow-500);
+  font-size: clamp(1.25rem, 1.67vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.4;
+  margin-block-end: clamp(1.5rem, 2vw, 2.25rem);
+  padding-inline-start: 1.875rem;
+}
+
+.standard-and-procedures-block__text {
+  font-size: var(--text-body-lg);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.standard-and-procedures-block__text p {
+  margin-block: 0 1em;
+}
+
+.standard-and-procedures-block__text > :last-child {
+  margin-block-end: 0;
+}
+
+.standard-and-procedures-block__files {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.standard-and-procedures-block__file {
+  align-items: center;
+  border-block-end: 0.0625rem solid var(--color-yellow-500);
+  color: var(--color-foreground);
+  display: flex;
+  font-size: var(--text-body-lg);
+  font-weight: 500;
+  gap: 1.5rem;
+  justify-content: space-between;
+  line-height: 1.4;
+  min-block-size: 3.3125rem;
+  padding-block: 0.9375rem;
+  text-decoration: none;
+}
+
+.standard-and-procedures-block__file:hover,
+.standard-and-procedures-block__file:focus-visible {
+  color: var(--color-foreground);
+  text-decoration: none;
+}
+
+.standard-and-procedures-block__file:focus-visible {
+  outline: 0.1875rem solid var(--color-yellow-500);
+  outline-offset: 0.1875rem;
+}
+
+.standard-and-procedures-block__download {
+  block-size: 1.125rem;
+  display: block;
+  flex: 0 0 auto;
+  inline-size: 1.625rem;
+  object-fit: contain;
+  transition: transform var(--transition-standard);
+}
+
+.standard-and-procedures-block__file:hover .standard-and-procedures-block__download,
+.standard-and-procedures-block__file:focus-visible .standard-and-procedures-block__download {
+  transform: translateY(0.125rem);
+}
+
+.standard-and-procedures-block__placeholder {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (width < 64rem) {
+  .standard-and-procedures-block__layout {
+    gap: 3.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .standard-and-procedures-block__content,
+  .standard-and-procedures-block__heading {
+    max-inline-size: none;
+  }
+}
+
+@media (width < 40rem) {
+  .standard-and-procedures-block {
+    padding-block: 3.5rem;
+  }
+
+  .standard-and-procedures-block__highlighted {
+    border-inline-start-width: 0.375rem;
+    padding-inline-start: 1.25rem;
+  }
+
+  .standard-and-procedures-block__file {
+    align-items: flex-start;
+  }
+}

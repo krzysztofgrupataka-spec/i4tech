@@ -1,0 +1,22 @@
+{
+  "apiVersion": 3,
+  "name": "acf/case-study-hero",
+  "title": "Case study hero",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "Hero case study z parametrami, rozwiązaniami i zdjęciem.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 3,
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtons": true,
+    "expandedEditorButtonText": "Edytuj hero",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false
+  }
+}

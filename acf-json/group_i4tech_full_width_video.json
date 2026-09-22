@@ -1,0 +1,101 @@
+{
+    "key": "group_i4tech_full_width_video",
+    "title": "Full width video",
+    "fields": [
+        {
+            "key": "field_i4tech_full_width_video_media_type",
+            "label": "Typ tła",
+            "name": "full_width_video_media_type",
+            "type": "select",
+            "choices": {
+                "image": "Zdjęcie",
+                "video": "Film"
+            },
+            "default_value": "image",
+            "ui": 1,
+            "return_format": "value"
+        },
+        {
+            "key": "field_i4tech_full_width_video_image",
+            "label": "Zdjęcie",
+            "name": "full_width_video_image",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_i4tech_full_width_video_media_type",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_i4tech_full_width_video_video",
+            "label": "Film",
+            "name": "full_width_video_video",
+            "type": "file",
+            "return_format": "id",
+            "library": "all",
+            "mime_types": "mp4,webm",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_i4tech_full_width_video_media_type",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_i4tech_full_width_video_heading",
+            "label": "Nagłówek",
+            "name": "full_width_video_heading",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_i4tech_full_width_video_button",
+            "label": "CTA",
+            "name": "full_width_video_button",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_full_width_video_button_label",
+                    "label": "Tekst buttona",
+                    "name": "label",
+                    "type": "text"
+                },
+                {
+                    "key": "field_i4tech_full_width_video_button_url",
+                    "label": "URL buttona",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "Możesz podać pełny URL, adres względny lub kotwicę, np. #rozwiazania.",
+                    "placeholder": "#rozwiazania"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/full-width-video"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788247223
+}

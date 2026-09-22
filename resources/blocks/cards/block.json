@@ -1,0 +1,24 @@
+{
+  "apiVersion": 3,
+  "name": "i4tech/cards",
+  "title": "Cards",
+  "category": "design",
+  "icon": "grid-view",
+  "description": "A responsive group of feature cards.",
+  "textdomain": "i4tech",
+  "supports": {
+    "align": ["wide"],
+    "anchor": true
+  },
+  "attributes": {
+    "heading": { "type": "string", "default": "What you get" },
+    "items": {
+      "type": "array",
+      "default": [
+        { "title": "Blade-first", "text": "Clean templates and components." },
+        { "title": "Fast assets", "text": "Vite, TypeScript and SCSS." },
+        { "title": "Block-ready", "text": "A sane Gutenberg workflow." }
+      ]
+    }
+  }
+}

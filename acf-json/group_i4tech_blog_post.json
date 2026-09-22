@@ -1,0 +1,75 @@
+{
+    "key": "group_i4tech_blog_post",
+    "title": "Dodatkowe treści wpisu",
+    "fields": [
+        {
+            "key": "field_i4tech_blog_post_author_name",
+            "label": "Autor — imię i nazwisko",
+            "name": "blog_post_author_name",
+            "type": "text",
+            "instructions": "Jeśli pole pozostanie puste, zostanie użyty autor przypisany w WordPressie."
+        },
+        {
+            "key": "field_i4tech_blog_post_author_role",
+            "label": "Autor — stanowisko",
+            "name": "blog_post_author_role",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_blog_post_intro",
+            "label": "Wprowadzenie",
+            "name": "blog_post_intro",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_i4tech_blog_post_related_heading",
+            "label": "Nagłówek sekcji powiązanych wpisów",
+            "name": "blog_post_related_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "default_value": "<p>O czym powinieneś <span class=\"text-highlight\">nie tylko</span></p>"
+        },
+        {
+            "key": "field_i4tech_blog_post_related_posts",
+            "label": "Powiązane wpisy",
+            "name": "blog_post_related_posts",
+            "type": "relationship",
+            "post_type": [
+                "post"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "filters": [
+                "search"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "return_format": "object",
+            "min": 0,
+            "max": 3,
+            "instructions": "Wybierz maksymalnie 3 wpisy."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

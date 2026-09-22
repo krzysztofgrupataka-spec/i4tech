@@ -1,0 +1,24 @@
+{
+  "apiVersion": 3,
+  "name": "i4tech/hero",
+  "title": "Hero",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "Accessible hero section with heading, text and CTA.",
+  "textdomain": "i4tech",
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "eyebrow": { "type": "string", "default": "Modern WordPress" },
+    "heading": { "type": "string", "default": "Production-ready Sage starter" },
+    "text": { "type": "string", "default": "A clean foundation for fast, accessible commercial websites." },
+    "buttonText": { "type": "string", "default": "Start a project" },
+    "buttonUrl": { "type": "string", "default": "/" }
+  }
+}

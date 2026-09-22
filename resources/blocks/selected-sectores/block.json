@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/selected-sectors",
+  "title": "Selected Sectors",
+  "category": "design",
+  "icon": "groups",
+  "description": "Heading and links to selected industries.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

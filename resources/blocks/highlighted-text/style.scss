@@ -1,0 +1,109 @@
+.highlighted-text-block {
+  background: var(--color-white);
+  color: var(--color-foreground);
+}
+
+.highlighted-text-block__panel {
+  background: var(--color-gray-100);
+  inline-size: min(87.6563%, 105.1875rem);
+  min-block-size: 19.4375rem;
+  padding-block: 5.6875rem;
+}
+
+.highlighted-text-block--left .highlighted-text-block__panel {
+  border-end-end-radius: 5.625rem;
+  margin-inline-end: auto;
+}
+
+.highlighted-text-block--right .highlighted-text-block__panel {
+  border-end-start-radius: 5.625rem;
+  margin-inline-start: auto;
+}
+
+.highlighted-text-block--white .highlighted-text-block__panel {
+  background: var(--color-white);
+}
+
+.highlighted-text-block--yellow .highlighted-text-block__panel {
+  background: var(--color-yellow-500);
+}
+
+.highlighted-text-block--dark .highlighted-text-block__panel {
+  background: var(--color-gray-900);
+  color: var(--color-white);
+}
+
+.highlighted-text-block__inner {
+  align-items: stretch;
+  display: flex;
+  gap: clamp(1.5rem, 2.5vw, 3rem);
+  inline-size: min(calc(100% - 2rem), 71.5rem);
+  margin-inline: auto;
+}
+
+.highlighted-text-block__line {
+  background: var(--color-yellow-500);
+  border-radius: 1.25rem;
+  flex: 0 0 0.5625rem;
+  min-block-size: 7.75rem;
+}
+
+.highlighted-text-block--yellow .highlighted-text-block__line,
+.highlighted-text-block--dark .highlighted-text-block__line {
+  background: var(--color-white);
+}
+
+.highlighted-text-block__text {
+  align-self: center;
+  font-size: clamp(1.375rem, 2.01vw, 1.8125rem);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.highlighted-text-block__text p {
+  margin-block: 0 1em;
+}
+
+.highlighted-text-block__text strong {
+  font-weight: 700;
+}
+
+.highlighted-text-block__text > :last-child {
+  margin-block-end: 0;
+}
+
+.highlighted-text-block__placeholder {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (width < 64rem) {
+  .highlighted-text-block__panel {
+    inline-size: calc(100% - var(--container-gutter));
+    padding-block: 4rem;
+  }
+}
+
+@media (width < 40rem) {
+  .highlighted-text-block__panel {
+    min-block-size: auto;
+    padding-block: 3rem;
+  }
+
+  .highlighted-text-block--left .highlighted-text-block__panel {
+    border-end-end-radius: 3rem;
+  }
+
+  .highlighted-text-block--right .highlighted-text-block__panel {
+    border-end-start-radius: 3rem;
+  }
+
+  .highlighted-text-block__inner {
+    gap: 1.25rem;
+  }
+
+  .highlighted-text-block__line {
+    flex-basis: 0.375rem;
+  }
+}

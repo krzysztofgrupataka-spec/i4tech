@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/hero-section",
+  "title": "Hero section",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "Hero section with image, heading, text and CTA fields.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

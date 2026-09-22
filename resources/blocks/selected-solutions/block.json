@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/selected-solutions",
+  "title": "Selected solutions",
+  "category": "design",
+  "icon": "grid-view",
+  "description": "Selected solution tiles with a heading and image.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+    "key": "group_i4tech_elements_text_image",
+    "title": "Elements text image",
+    "fields": [
+        {
+            "key": "field_i4tech_elements_text_image_heading",
+            "label": "Nagłówek",
+            "name": "elements_text_image_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment i wybierz Format → Wyróżnienie żółte."
+        },
+        {
+            "key": "field_i4tech_elements_text_image_items",
+            "label": "Elementy",
+            "name": "elements_text_image_items",
+            "type": "repeater",
+            "layout": "block",
+            "min": 1,
+            "button_label": "Dodaj element",
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_elements_text_image_item_type",
+                    "label": "Typ elementu",
+                    "name": "type",
+                    "type": "button_group",
+                    "choices": {
+                        "image": "Obraz",
+                        "text": "Tekst"
+                    },
+                    "default_value": "text",
+                    "return_format": "value",
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_i4tech_elements_text_image_item_image",
+                    "label": "Obraz",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_i4tech_elements_text_image_item_type",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "key": "field_i4tech_elements_text_image_item_title",
+                    "label": "Nagłówek",
+                    "name": "title",
+                    "type": "text",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_i4tech_elements_text_image_item_type",
+                                "operator": "==",
+                                "value": "text"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "key": "field_i4tech_elements_text_image_item_text",
+                    "label": "Treść",
+                    "name": "text",
+                    "type": "wysiwyg",
+                    "tabs": "visual",
+                    "toolbar": "i4tech",
+                    "media_upload": 0,
+                    "delay": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_i4tech_elements_text_image_item_type",
+                                "operator": "==",
+                                "value": "text"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "key": "field_i4tech_elements_text_image_item_background",
+                    "label": "Kolor kafla",
+                    "name": "background",
+                    "type": "select",
+                    "choices": {
+                        "white": "Biały",
+                        "yellow": "Żółty",
+                        "beige": "Beżowy"
+                    },
+                    "default_value": "white",
+                    "return_format": "value",
+                    "ui": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_i4tech_elements_text_image_item_type",
+                                "operator": "==",
+                                "value": "text"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_i4tech_elements_text_image_rounded",
+            "label": "Zaokrąglenie sekcji",
+            "name": "elements_text_image_rounded",
+            "type": "true_false",
+            "message": "Zaokrąglij prawy dolny róg",
+            "default_value": 1,
+            "ui": 1
+        },
+        {
+            "key": "field_i4tech_elements_text_image_background",
+            "label": "Tło sekcji",
+            "name": "elements_text_image_background",
+            "type": "button_group",
+            "choices": {
+                "gradient": "Gradient",
+                "white": "Białe",
+                "beige": "Beżowe"
+            },
+            "default_value": "gradient",
+            "return_format": "value",
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/elements-text-image"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

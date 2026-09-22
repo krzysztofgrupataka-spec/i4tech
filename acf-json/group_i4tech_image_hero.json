@@ -1,0 +1,75 @@
+{
+    "key": "group_i4tech_image_hero",
+    "title": "Image hero",
+    "fields": [
+        {
+            "key": "field_i4tech_image_hero_image",
+            "label": "Zdjęcie",
+            "name": "image_hero_image",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "large",
+            "library": "all"
+        },
+        {
+            "key": "field_i4tech_image_hero_heading",
+            "label": "Nagłówek",
+            "name": "image_hero_heading",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_i4tech_image_hero_text",
+            "label": "Tekst",
+            "name": "image_hero_text",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_i4tech_image_hero_alignment",
+            "label": "Wyrównanie treści",
+            "name": "image_hero_alignment",
+            "type": "button_group",
+            "choices": {
+                "left": "Left",
+                "center": "Center"
+            },
+            "default_value": "left",
+            "return_format": "value",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_i4tech_image_hero_primary_button",
+            "label": "Pierwszy przycisk",
+            "name": "image_hero_primary_button",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_i4tech_image_hero_secondary_button",
+            "label": "Drugi przycisk",
+            "name": "image_hero_secondary_button",
+            "type": "link",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/image-hero"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

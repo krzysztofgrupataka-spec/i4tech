@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/elements-text-image",
+  "title": "Elements text image",
+  "category": "design",
+  "icon": "grid-view",
+  "description": "Section with a heading and a flexible grid of text and image tiles.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 3,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+    "key": "group_i4tech_homepage_technologies",
+    "title": "Homepage technologies",
+    "fields": [
+        {
+            "key": "field_i4tech_homepage_technologies_items",
+            "label": "Technologie",
+            "name": "homepage_technologies_items",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Dodaj technologie",
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_homepage_technologies_item_technology",
+                    "label": "Technologia rodzica",
+                    "name": "technology",
+                    "type": "post_object",
+                    "post_type": [
+                        "technology"
+                    ],
+                    "return_format": "id",
+                    "ui": 1,
+                    "instructions": "Dzieci tej technologii zostana pokazane automatycznie jako linki w accordionie."
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/homepage-technologies"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

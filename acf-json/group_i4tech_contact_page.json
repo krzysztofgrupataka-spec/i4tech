@@ -1,0 +1,108 @@
+{
+    "key": "group_i4tech_contact_page",
+    "title": "Contact page",
+    "fields": [
+        {
+            "key": "field_i4tech_contact_page_heading",
+            "label": "Nagłówek",
+            "name": "contact_page_heading",
+            "type": "textarea",
+            "rows": 2,
+            "new_lines": "",
+            "default_value": "Przed jakim wyzwaniem stoi Twój zakład?"
+        },
+        {
+            "key": "field_i4tech_contact_page_intro",
+            "label": "Tekst",
+            "name": "contact_page_intro",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": "",
+            "default_value": "Opisz krótko swój problem technologiczny. Skontaktujemy się z Tobą i przedstawimy Ci kolejne kroki do jego rozwiązania. Możesz też zadzwonić do nas od razu."
+        },
+        {
+            "key": "field_i4tech_contact_page_email",
+            "label": "E-mail ogólny",
+            "name": "contact_page_email",
+            "type": "email",
+            "default_value": "i4t@i4t.pl"
+        },
+        {
+            "key": "field_i4tech_contact_page_directions_url",
+            "label": "Link „wyznacz trasę”",
+            "name": "contact_page_directions_url",
+            "type": "url"
+        },
+        {
+            "key": "field_i4tech_contact_page_office_label",
+            "label": "Nazwa sekretariatu",
+            "name": "contact_page_office_label",
+            "type": "text",
+            "default_value": "Sekretariat"
+        },
+        {
+            "key": "field_i4tech_contact_page_office_phones",
+            "label": "Telefony sekretariatu",
+            "name": "contact_page_office_phones",
+            "type": "textarea",
+            "rows": 2,
+            "new_lines": "",
+            "instructions": "Jeden numer w wierszu."
+        },
+        {
+            "key": "field_i4tech_contact_page_office_email",
+            "label": "E-mail sekretariatu",
+            "name": "contact_page_office_email",
+            "type": "email"
+        },
+        {
+            "key": "field_i4tech_contact_page_sales_label",
+            "label": "Nazwa działu sprzedaży",
+            "name": "contact_page_sales_label",
+            "type": "text",
+            "default_value": "Dział sprzedaży"
+        },
+        {
+            "key": "field_i4tech_contact_page_sales_phone",
+            "label": "Telefon działu sprzedaży",
+            "name": "contact_page_sales_phone",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_contact_page_sales_email",
+            "label": "E-mail działu sprzedaży",
+            "name": "contact_page_sales_email",
+            "type": "email"
+        },
+        {
+            "key": "field_i4tech_contact_page_form",
+            "label": "Formularz",
+            "name": "contact_page_form",
+            "type": "post_object",
+            "post_type": [
+                "wpcf7_contact_form"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "return_format": "id",
+            "ui": 1,
+            "allow_null": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/contact-page"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

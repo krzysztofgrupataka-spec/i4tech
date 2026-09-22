@@ -1,0 +1,22 @@
+{
+  "apiVersion": 3,
+  "name": "acf/case-study-efects",
+  "title": "Case study efects",
+  "category": "design",
+  "icon": "chart-line",
+  "description": "Sekcja efektów case study z wyróżnioną treścią.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 3,
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtons": true,
+    "expandedEditorButtonText": "Edytuj efekty",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-base);
+  line-height: 1.6;
+  text-rendering: optimizelegibility;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}

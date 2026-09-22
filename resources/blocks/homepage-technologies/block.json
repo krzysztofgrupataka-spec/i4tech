@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/homepage-technologies",
+  "title": "Homepage Technologies",
+  "category": "design",
+  "icon": "list-view",
+  "description": "Homepage technologies accordion fed by selected technology posts.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

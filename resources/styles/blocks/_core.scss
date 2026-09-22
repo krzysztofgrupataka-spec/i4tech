@@ -1,0 +1,46 @@
+.wp-block-image img {
+  border-radius: var(--radius-sm);
+}
+
+.wp-block-button__link {
+  border-radius: var(--radius-md);
+}
+
+.alignwide {
+  inline-size: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+}
+
+.wp-block-pullquote {
+  background: var(--color-gray-100);
+  border: 0;
+  border-inline-start: 0.3125rem solid var(--color-primary);
+  border-radius: 0.5rem;
+  color: var(--color-foreground);
+  margin-block: 2rem;
+  padding: 1.5rem 1.25rem;
+  text-align: start;
+}
+
+.wp-block-pullquote blockquote {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.wp-block-pullquote p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.wp-block-pullquote cite {
+  display: block;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-block-start: 1rem;
+  text-transform: none;
+}

@@ -1,0 +1,36 @@
+{
+    "key": "group_i4tech_solution_cta",
+    "title": "Solution CTA",
+    "fields": [
+        {
+            "key": "field_i4tech_solution_cta_heading",
+            "label": "Nagłówek",
+            "name": "solution_cta_heading",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_i4tech_solution_cta_button",
+            "label": "Przycisk",
+            "name": "solution_cta_button",
+            "type": "link",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/solution-cta"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

@@ -1,0 +1,15 @@
+{
+  "name": "i4tech",
+  "short_name": "i4tech",
+  "icons": [
+    {
+      "src": "/wp-content/themes/i4tech/public/favicons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#0f3d5e",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

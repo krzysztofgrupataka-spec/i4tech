@@ -1,0 +1,22 @@
+{
+  "apiVersion": 3,
+  "name": "acf/blog-table",
+  "title": "Blog table",
+  "category": "design",
+  "icon": "editor-table",
+  "description": "Elastyczna tabela porównawcza do wpisów blogowych.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 3,
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtons": true,
+    "expandedEditorButtonText": "Edytuj pola tabeli",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["wide"],
+    "anchor": true,
+    "mode": false
+  }
+}

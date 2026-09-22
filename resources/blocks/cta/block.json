@@ -1,0 +1,19 @@
+{
+  "apiVersion": 3,
+  "name": "i4tech/cta",
+  "title": "CTA",
+  "category": "design",
+  "icon": "megaphone",
+  "description": "Compact call to action section.",
+  "textdomain": "i4tech",
+  "supports": {
+    "align": ["wide"],
+    "anchor": true
+  },
+  "attributes": {
+    "heading": { "type": "string", "default": "Ready to build?" },
+    "text": { "type": "string", "default": "Use this section to drive users toward a meaningful next step." },
+    "buttonText": { "type": "string", "default": "Contact us" },
+    "buttonUrl": { "type": "string", "default": "/contact" }
+  }
+}

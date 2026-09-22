@@ -1,0 +1,11 @@
+parameters:
+  level: 7
+  paths:
+    - app
+    - functions.php
+  excludePaths:
+    - vendor
+    - public/build
+  bootstrapFiles:
+    - vendor/autoload.php
+  treatPhpDocTypesAsCertain: false

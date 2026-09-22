@@ -1,0 +1,72 @@
+{
+    "key": "group_i4tech_standard_and_procedures",
+    "title": "Standard and procedures",
+    "fields": [
+        {
+            "key": "field_i4tech_standard_and_procedures_heading",
+            "label": "Nagłówek",
+            "name": "standard_and_procedures_heading",
+            "type": "text"
+        },
+        {
+            "key": "field_i4tech_standard_and_procedures_highlighted_text",
+            "label": "Wyróżniony tekst",
+            "name": "standard_and_procedures_highlighted_text",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_i4tech_standard_and_procedures_text",
+            "label": "Tekst",
+            "name": "standard_and_procedures_text",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_i4tech_standard_and_procedures_files",
+            "label": "Pliki do pobrania",
+            "name": "standard_and_procedures_files",
+            "type": "repeater",
+            "layout": "block",
+            "min": 1,
+            "button_label": "Dodaj plik",
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_standard_and_procedures_file_label",
+                    "label": "Nazwa dokumentu",
+                    "name": "label",
+                    "type": "text",
+                    "instructions": "Opcjonalnie. Jeśli pole jest puste, zostanie użyty tytuł pliku."
+                },
+                {
+                    "key": "field_i4tech_standard_and_procedures_file",
+                    "label": "Plik",
+                    "name": "file",
+                    "type": "file",
+                    "return_format": "array",
+                    "library": "all",
+                    "required": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/standard-and-procedures"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

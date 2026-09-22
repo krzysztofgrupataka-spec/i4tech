@@ -1,0 +1,63 @@
+{
+    "key": "group_i4tech_opinions_elements",
+    "title": "Opinions elements",
+    "fields": [
+        {
+            "key": "field_i4tech_opinions_elements_heading",
+            "label": "Nagłówek",
+            "name": "opinions_elements_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment i wybierz Format → Wyróżnienie żółte."
+        },
+        {
+            "key": "field_i4tech_opinions_elements_items",
+            "label": "Opinie",
+            "name": "opinions_elements_items",
+            "type": "repeater",
+            "layout": "block",
+            "min": 1,
+            "button_label": "Dodaj opinię",
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_opinions_elements_item_text",
+                    "label": "Tekst opinii",
+                    "name": "text",
+                    "type": "textarea",
+                    "rows": 6,
+                    "new_lines": "wpautop"
+                },
+                {
+                    "key": "field_i4tech_opinions_elements_item_name",
+                    "label": "Imię i nazwisko",
+                    "name": "name",
+                    "type": "text"
+                },
+                {
+                    "key": "field_i4tech_opinions_elements_item_position",
+                    "label": "Stanowisko",
+                    "name": "position",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/opinions-elements"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

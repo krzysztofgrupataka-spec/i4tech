@@ -1,0 +1,152 @@
+{
+    "key": "group_i4tech_theme_settings_footer",
+    "title": "Stopka",
+    "fields": [
+        {
+            "key": "field_i4tech_footer_tab_content",
+            "label": "Treść",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_i4tech_footer_heading",
+            "label": "Nagłówek",
+            "name": "footer_heading",
+            "type": "text",
+            "default_value": "Z jakim wyzwaniem"
+        },
+        {
+            "key": "field_i4tech_footer_heading_highlight",
+            "label": "Wyróżniona część nagłówka",
+            "name": "footer_heading_highlight",
+            "type": "text",
+            "default_value": "mierzy się Twój zakład?"
+        },
+        {
+            "key": "field_i4tech_footer_description",
+            "label": "Tekst",
+            "name": "footer_description",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": "",
+            "default_value": "Opowiedz nam o nim, a przygotujemy idealnie dopasowane rozwiązanie."
+        },
+        {
+            "key": "field_i4tech_footer_tab_cta",
+            "label": "CTA",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_i4tech_footer_cta_label",
+            "label": "Tekst przycisku",
+            "name": "footer_cta_label",
+            "type": "text",
+            "default_value": "Skontaktuj się z nami"
+        },
+        {
+            "key": "field_i4tech_footer_cta_url",
+            "label": "Adres URL",
+            "name": "footer_cta_url",
+            "type": "url"
+        },
+        {
+            "key": "field_i4tech_footer_tab_contact",
+            "label": "Kontakt",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_i4tech_footer_address",
+            "label": "Dane kontaktowe",
+            "name": "footer_address",
+            "type": "textarea",
+            "rows": 5,
+            "new_lines": "",
+            "default_value": "i4tech Sp. z o.o.\nul. 16 lipca 14\n41-506 Chorzów"
+        },
+        {
+            "key": "field_i4tech_footer_tab_social",
+            "label": "Social media",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_i4tech_footer_social_label",
+            "label": "Etykieta sekcji",
+            "name": "footer_social_label",
+            "type": "text",
+            "default_value": "Social media"
+        },
+        {
+            "key": "field_i4tech_footer_linkedin_url",
+            "label": "LinkedIn URL",
+            "name": "footer_linkedin_url",
+            "type": "url"
+        },
+        {
+            "key": "field_i4tech_footer_facebook_url",
+            "label": "Facebook URL",
+            "name": "footer_facebook_url",
+            "type": "url"
+        },
+        {
+            "key": "field_i4tech_footer_youtube_url",
+            "label": "YouTube URL",
+            "name": "footer_youtube_url",
+            "type": "url"
+        },
+        {
+            "key": "field_i4tech_footer_tab_background",
+            "label": "Tło",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_i4tech_footer_background_image",
+            "label": "Zdjęcie tła",
+            "name": "footer_background_image",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_i4tech_blog_tab",
+            "label": "Blog",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_i4tech_blog_heading",
+            "label": "Tytuł strony bloga",
+            "name": "blog_heading",
+            "type": "text",
+            "default_value": "Baza wiedzy"
+        },
+        {
+            "key": "field_i4tech_blog_description",
+            "label": "Opis strony bloga",
+            "name": "blog_description",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": "",
+            "default_value": "Tutaj znajdziesz fachowe treści w zakresie oferowanych przez nas technologii"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "i4tech-theme-settings"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

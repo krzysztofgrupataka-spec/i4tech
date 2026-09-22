@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/solution-cta",
+  "title": "Solution CTA",
+  "category": "design",
+  "icon": "megaphone",
+  "description": "Centered call to action with a heading and button.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

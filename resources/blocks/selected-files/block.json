@@ -1,0 +1,25 @@
+{
+  "apiVersion": 3,
+  "name": "acf/selected-files",
+  "title": "Selected files",
+  "category": "design",
+  "icon": "media-document",
+  "description": "A heading with links for opening or downloading selected files.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 3,
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtons": true,
+    "expandedEditorButtonText": "Edytuj pola bloku",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

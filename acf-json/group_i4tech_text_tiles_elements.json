@@ -1,0 +1,59 @@
+{
+    "key": "group_i4tech_text_tiles_elements",
+    "title": "Text tiles elements",
+    "fields": [
+        {
+            "key": "field_i4tech_text_tiles_elements_heading",
+            "label": "Nagłówek",
+            "name": "text_tiles_elements_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment i wybierz Format → Wyróżnienie żółte."
+        },
+        {
+            "key": "field_i4tech_text_tiles_elements_items",
+            "label": "Kafle",
+            "name": "text_tiles_elements_items",
+            "type": "repeater",
+            "layout": "block",
+            "min": 1,
+            "button_label": "Dodaj kafel",
+            "sub_fields": [
+                {
+                    "key": "field_i4tech_text_tiles_elements_item_title",
+                    "label": "Tytuł",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_i4tech_text_tiles_elements_item_text",
+                    "label": "Tekst",
+                    "name": "text",
+                    "type": "wysiwyg",
+                    "tabs": "visual",
+                    "toolbar": "i4tech",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/text-tiles-elements"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

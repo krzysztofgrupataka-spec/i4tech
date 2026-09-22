@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/selected-blog-posts",
+  "title": "Selected Blog Posts",
+  "category": "design",
+  "icon": "admin-post",
+  "description": "Heading, blog archive link and three selected posts.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

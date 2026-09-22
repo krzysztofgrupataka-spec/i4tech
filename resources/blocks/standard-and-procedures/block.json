@@ -1,0 +1,25 @@
+{
+  "apiVersion": 3,
+  "name": "acf/standard-and-procedures",
+  "title": "Standard and procedures",
+  "category": "design",
+  "icon": "download",
+  "description": "Section with standards, procedures and downloadable documents.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 3,
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtons": true,
+    "expandedEditorButtonText": "Edytuj pola bloku",
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

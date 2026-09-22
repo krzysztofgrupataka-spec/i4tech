@@ -1,0 +1,21 @@
+.hero-block {
+  background: linear-gradient(135deg, var(--color-surface), var(--color-background));
+  padding-block: clamp(5rem, 10vw, 9rem);
+}
+
+.hero-block__eyebrow {
+  color: var(--color-accent);
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-block__heading {
+  max-inline-size: 12ch;
+}
+
+.hero-block__text {
+  color: var(--color-muted);
+  font-size: 1.25rem;
+  max-inline-size: 42rem;
+}

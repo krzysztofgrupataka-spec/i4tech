@@ -1,0 +1,56 @@
+{
+    "key": "group_i4tech_selected_solutions",
+    "title": "Selected solutions",
+    "fields": [
+        {
+            "key": "field_i4tech_selected_solutions_heading",
+            "label": "Nagłówek",
+            "name": "selected_solutions_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment i wybierz Format → Wyróżnienie żółte."
+        },
+        {
+            "key": "field_i4tech_selected_solutions_items",
+            "label": "Rozwiązania",
+            "name": "selected_solutions_items",
+            "type": "relationship",
+            "post_type": [
+                "solution"
+            ],
+            "filters": [
+                "search"
+            ],
+            "return_format": "id",
+            "min": 1,
+            "instructions": "Wybierz rozwiązania i ustaw kolejność wyświetlania."
+        },
+        {
+            "key": "field_i4tech_selected_solutions_image",
+            "label": "Zdjęcie",
+            "name": "selected_solutions_image",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/selected-solutions"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/materials-form-section",
+  "title": "Materials form section",
+  "category": "design",
+  "icon": "download",
+  "description": "Centered section with a Contact Form 7 form for requesting materials.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

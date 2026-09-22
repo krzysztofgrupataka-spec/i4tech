@@ -1,0 +1,59 @@
+{
+    "key": "group_i4tech_linked_technologies",
+    "title": "Linked technologies",
+    "fields": [
+        {
+            "key": "field_i4tech_linked_technologies_variant",
+            "label": "Wariant",
+            "name": "linked_technologies_variant",
+            "type": "button_group",
+            "choices": {
+                "vertical-accordion": "Vertical accordion",
+                "horizontal": "Horizontal"
+            },
+            "default_value": "vertical-accordion",
+            "return_format": "value",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_i4tech_linked_technologies_heading",
+            "label": "Nagłówek",
+            "name": "linked_technologies_heading",
+            "type": "wysiwyg",
+            "tabs": "visual",
+            "toolbar": "i4tech",
+            "media_upload": 0,
+            "delay": 0,
+            "instructions": "Zaznacz fragment i wybierz Formats → Wyróżnienie żółte."
+        },
+        {
+            "key": "field_i4tech_linked_technologies_items",
+            "label": "Technologie",
+            "name": "linked_technologies_items",
+            "type": "relationship",
+            "post_type": [
+                "technology"
+            ],
+            "filters": [
+                "search"
+            ],
+            "return_format": "id",
+            "instructions": "Wybierz technologie i ustaw ich kolejność. W wariancie Horizontal możesz wybrać także technologie podrzędne. W wariancie Vertical accordion wybierz technologie nadrzędne — ich elementy podrzędne zostaną pobrane automatycznie."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/linked-technologies"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1788179500
+}

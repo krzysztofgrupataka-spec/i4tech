@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "acf/hero-text",
+  "title": "Hero text",
+  "category": "design",
+  "icon": "align-wide",
+  "description": "Two-column hero with heading, text and CTA.",
+  "textdomain": "i4tech",
+  "acf": {
+    "mode": "edit",
+    "blockVersion": 2,
+    "hideFieldsInSidebar": true,
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "mode": false,
+    "spacing": {
+      "margin": true
+    }
+  }
+}

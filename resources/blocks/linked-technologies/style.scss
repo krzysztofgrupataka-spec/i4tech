@@ -1,0 +1,94 @@
+.linked-technologies-block {
+  background: var(--color-gray-100);
+  padding-block: clamp(4rem, 6.95vw, 6.25rem);
+}
+
+.linked-technologies-block__inner {
+  align-items: start;
+  display: grid;
+  gap: clamp(3rem, 8vw, 10rem);
+  grid-template-columns: minmax(0, 37.25rem) minmax(0, 39.375rem);
+  justify-content: space-between;
+}
+
+.linked-technologies-block__heading {
+  font-size: clamp(2.5rem, 3.82vw, 3.4375rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.linked-technologies-block__heading .text-highlight {
+  color: var(--color-yellow-300);
+}
+
+.linked-technologies-block__placeholder {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.linked-technologies-block--horizontal {
+  padding-block: clamp(4rem, 4.79vw, 5.75rem) clamp(4rem, 4.95vw, 5.9375rem);
+}
+
+.linked-technologies-block--horizontal .linked-technologies-block__inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 2.19vw, 2.625rem);
+}
+
+.linked-technologies-block--horizontal .linked-technologies-block__heading {
+  max-inline-size: 49.875rem;
+  text-align: center;
+}
+
+.linked-technologies-block__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  justify-content: center;
+}
+
+.linked-technologies-block__link {
+  align-items: center;
+  background: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: var(--radius-pill);
+  color: var(--color-foreground);
+  display: inline-flex;
+  font-size: var(--text-body-lg);
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1;
+  min-block-size: 3.25rem;
+  padding: 0.875rem 1.875rem;
+  text-decoration: none;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.linked-technologies-block__link:hover,
+.linked-technologies-block__link:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-foreground);
+  text-decoration: none;
+}
+
+@media (width < 64rem) {
+  .linked-technologies-block--vertical-accordion .linked-technologies-block__inner {
+    grid-template-columns: minmax(0, 39.375rem);
+  }
+}
+
+@media (width < 40rem) {
+  .linked-technologies-block__links {
+    gap: 0.75rem;
+  }
+
+  .linked-technologies-block__link {
+    font-size: var(--text-body-md);
+    min-block-size: 2.75rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
