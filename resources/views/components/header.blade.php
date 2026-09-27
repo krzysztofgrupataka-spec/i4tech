@@ -140,6 +140,7 @@
       <a class="site-header__brand" href="{{ esc_url(home_url('/')) }}" rel="home">
         @if ($customLogo)
           {!! $customLogo !!}
+          @include('components.logo-white')
         @else
           <span class="site-header__logo-mark" aria-hidden="true">i</span>
           <span class="site-header__logo-bolt" aria-hidden="true"></span>

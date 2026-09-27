@@ -66,6 +66,40 @@
             "default_value": "i4tech Sp. z o.o.\nul. 16 lipca 14\n41-506 Chorzów"
         },
         {
+            "key": "field_i4tech_contact_direct_tab",
+            "label": "Kontakt w formularzu",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_i4tech_contact_direct_intro",
+            "label": "Tekst nad danymi",
+            "name": "contact_direct_intro",
+            "type": "text",
+            "default_value": "Skontaktuj się z nami bezpośrednio lub wypełnij formularz."
+        },
+        {
+            "key": "field_i4tech_contact_direct_name",
+            "label": "Imię i nazwisko",
+            "name": "contact_direct_name",
+            "type": "text",
+            "default_value": "Jakub Siwiec"
+        },
+        {
+            "key": "field_i4tech_contact_direct_email",
+            "label": "E-mail",
+            "name": "contact_direct_email",
+            "type": "email",
+            "default_value": "jsiwiec@i4t.pl"
+        },
+        {
+            "key": "field_i4tech_contact_direct_phone",
+            "label": "Telefon",
+            "name": "contact_direct_phone",
+            "type": "text",
+            "default_value": "785 901 172"
+        },
+        {
             "key": "field_i4tech_footer_tab_social",
             "label": "Social media",
             "type": "tab",
@@ -132,6 +166,15 @@
             "rows": 3,
             "new_lines": "",
             "default_value": "Tutaj znajdziesz fachowe treści w zakresie oferowanych przez nas technologii"
+        },
+        {
+            "key": "field_i4tech_show_blog_sections",
+            "label": "Wyświetlaj sekcje bloga na podstronach",
+            "name": "show_blog_sections",
+            "type": "true_false",
+            "instructions": "Po wyłączeniu bloki z wpisami nie są wyświetlane na podstronach. Strona Blog i link Blog w stopce pozostają dostępne.",
+            "default_value": 0,
+            "ui": 1
         }
     ],
     "location": [
@@ -148,5 +191,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "active": true,
-    "modified": 1788179500
+    "modified": 1790352000
 }

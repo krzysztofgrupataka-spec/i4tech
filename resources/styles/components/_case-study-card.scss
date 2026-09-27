@@ -38,6 +38,12 @@
   padding: clamp(1.5rem, 4vw, 2.5rem);
 }
 
+.case-study-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+
 .case-study-card__label {
   align-self: flex-start;
   background: var(--color-background);

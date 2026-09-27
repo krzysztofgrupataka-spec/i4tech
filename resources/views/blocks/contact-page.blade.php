@@ -33,6 +33,10 @@
           <h2>{{ $data['salesLabel'] }}</h2>
           @if ($data['salesPhone'])<div class="contact-page-block__detail contact-page-block__detail--line">{!! $icon('phone', 16, 17) !!}<a href="tel:{{ preg_replace('/[^+\d]/', '', $data['salesPhone']) }}">{{ $data['salesPhone'] }}</a></div>@endif
           @if ($data['salesEmail'])<div class="contact-page-block__detail contact-page-block__detail--line">{!! $icon('mail', 16, 11) !!}<a href="mailto:{!! esc_attr(antispambot($data['salesEmail'])) !!}">{!! esc_html(antispambot($data['salesEmail'])) !!}</a></div>@endif
+          @if ($data['serviceEmail'])
+            <h2>{{ $data['serviceLabel'] }}</h2>
+            <div class="contact-page-block__detail contact-page-block__detail--line">{!! $icon('mail', 16, 11) !!}<a href="mailto:{!! esc_attr(antispambot($data['serviceEmail'])) !!}">{!! esc_html(antispambot($data['serviceEmail'])) !!}</a></div>
+          @endif
         </div>
       </div>
     </div>

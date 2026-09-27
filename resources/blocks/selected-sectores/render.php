@@ -2,7 +2,10 @@
 
 $heading = function_exists('get_field') ? (string) get_field('selected_sectors_heading') : '';
 $items = function_exists('get_field') ? get_field('selected_sectors_items') : [];
-$industry_ids = array_values(array_unique(array_filter(array_map('absint', is_array($items) ? $items : []))));
+$industry_ids = array_values(array_unique(array_filter(
+    array_map('absint', is_array($items) ? $items : []),
+    static fn (int $post_id): bool => $post_id > 0 && get_post_type($post_id) === 'industry'
+)));
 $is_preview = isset($is_preview) && $is_preview;
 $block_id = isset($block['anchor']) && $block['anchor']
     ? sanitize_title($block['anchor'])

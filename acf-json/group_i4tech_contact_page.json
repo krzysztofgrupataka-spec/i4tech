@@ -75,6 +75,20 @@
             "type": "email"
         },
         {
+            "key": "field_i4tech_contact_page_service_label",
+            "label": "Nazwa działu serwisu",
+            "name": "contact_page_service_label",
+            "type": "text",
+            "default_value": "Dział serwisu"
+        },
+        {
+            "key": "field_i4tech_contact_page_service_email",
+            "label": "E-mail działu serwisu",
+            "name": "contact_page_service_email",
+            "type": "email",
+            "default_value": "serwis@i4t.pl"
+        },
+        {
             "key": "field_i4tech_contact_page_form",
             "label": "Formularz",
             "name": "contact_page_form",

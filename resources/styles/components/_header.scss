@@ -88,6 +88,20 @@ body.admin-bar .site-header--transparent-dark {
   object-fit: contain;
 }
 
+.site-header__logo-image--white {
+  display: none;
+}
+
+.site-header--transparent:not(.is-scrolled) .site-header__logo-image:not(.site-header__logo-image--white),
+.site-header--transparent-dark:not(.is-scrolled) .site-header__logo-image:not(.site-header__logo-image--white) {
+  display: none;
+}
+
+.site-header--transparent:not(.is-scrolled) .site-header__logo-image--white,
+.site-header--transparent-dark:not(.is-scrolled) .site-header__logo-image--white {
+  display: block;
+}
+
 .site-header__logo-mark,
 .site-header__logo-text {
   color: var(--header-link-color);

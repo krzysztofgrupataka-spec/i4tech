@@ -15,6 +15,8 @@ $data = [
     'salesLabel' => $field('contact_page_sales_label', __('Dział sprzedaży', 'i4tech')),
     'salesPhone' => $field('contact_page_sales_phone'),
     'salesEmail' => $field('contact_page_sales_email'),
+    'serviceLabel' => $field('contact_page_service_label', __('Dział serwisu', 'i4tech')),
+    'serviceEmail' => $field('contact_page_service_email'),
     'formId' => function_exists('get_field') ? absint(get_field('contact_page_form') ?: 0) : 0,
     'address' => function_exists('\\App\\footer_options') ? (string) (\App\footer_options()['address'] ?? '') : '',
 ];

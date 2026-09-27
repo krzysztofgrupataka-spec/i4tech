@@ -3,6 +3,15 @@
     "title": "Materials form section",
     "fields": [
         {
+            "key": "field_6ab6618130001",
+            "label": "Wyświetlaj na stronie",
+            "name": "materials_form_show_on_frontend",
+            "type": "true_false",
+            "instructions": "Odznacz, aby ukryć tę sekcję na stronie publicznej. Treść pozostanie w edytorze i będzie można ją później przywrócić.",
+            "default_value": 1,
+            "ui": 1
+        },
+        {
             "key": "field_i4tech_materials_form_heading",
             "label": "Tytuł",
             "name": "materials_form_heading",
@@ -51,5 +60,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "active": true,
-    "modified": 1788179500
+    "modified": 1790337624
 }

@@ -19,11 +19,13 @@
   @endif
 
   <div class="case-study-card__body">
-    @if ($label)
-      <span class="case-study-card__label">{{ $label }}</span>
-    @endif
+    <div class="case-study-card__content">
+      @if ($label)
+        <span class="case-study-card__label">{{ $label }}</span>
+      @endif
 
-    <h3 class="case-study-card__title">{{ $title }}</h3>
+      <h3 class="case-study-card__title">{{ $title }}</h3>
+    </div>
 
     @if ($href)
       <a class="case-study-card__link" href="{{ esc_url($href) }}">

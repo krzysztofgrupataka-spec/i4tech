@@ -14,6 +14,14 @@
       <div class="contact-form-section-block__intro-inner">
         @if ($heading)<h2 class="contact-form-section-block__heading">{!! $headingHtml !!}</h2>@endif
         @if ($text)<div class="contact-form-section-block__text">{!! wp_kses_post(wpautop($text)) !!}</div>@endif
+        @if ($contactDirectIntro || $contactDirectName || $contactDirectEmail || $contactDirectPhone)
+          <div class="contact-form-section-block__direct-contact">
+            @if ($contactDirectIntro)<p class="contact-form-section-block__direct-contact-intro">{{ $contactDirectIntro }}</p>@endif
+            @if ($contactDirectName)<p class="contact-form-section-block__direct-contact-name">{{ $contactDirectName }}</p>@endif
+            @if ($contactDirectEmail)<p><a href="mailto:{{ esc_attr($contactDirectEmail) }}">{!! antispambot($contactDirectEmail) !!}</a></p>@endif
+            @if ($contactDirectPhone)<p><a href="tel:{{ preg_replace('/[^+\d]/', '', $contactDirectPhone) }}">{{ $contactDirectPhone }}</a></p>@endif
+          </div>
+        @endif
       </div>
     </div>
 

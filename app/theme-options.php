@@ -18,6 +18,11 @@ function footer_options_defaults(): array
         'background_image_id' => 0,
         'blog_heading' => __('Baza wiedzy', 'i4tech'),
         'blog_description' => __('Tutaj znajdziesz fachowe treści w zakresie oferowanych przez nas technologii', 'i4tech'),
+        'show_blog_sections' => false,
+        'contact_direct_intro' => __('Skontaktuj się z nami bezpośrednio lub wypełnij formularz.', 'i4tech'),
+        'contact_direct_name' => 'Jakub Siwiec',
+        'contact_direct_email' => 'jsiwiec@i4t.pl',
+        'contact_direct_phone' => '785 901 172',
     ];
 }
 
@@ -45,6 +50,11 @@ function footer_options(): array
         'background_image_id' => absint(get_field('footer_background_image', 'option') ?: 0),
         'blog_heading' => (string) (get_field('blog_heading', 'option') ?: $defaults['blog_heading']),
         'blog_description' => (string) (get_field('blog_description', 'option') ?: $defaults['blog_description']),
+        'show_blog_sections' => (bool) get_field('show_blog_sections', 'option'),
+        'contact_direct_intro' => (string) (get_field('contact_direct_intro', 'option') ?: $defaults['contact_direct_intro']),
+        'contact_direct_name' => (string) (get_field('contact_direct_name', 'option') ?: $defaults['contact_direct_name']),
+        'contact_direct_email' => (string) (get_field('contact_direct_email', 'option') ?: $defaults['contact_direct_email']),
+        'contact_direct_phone' => (string) (get_field('contact_direct_phone', 'option') ?: $defaults['contact_direct_phone']),
     ];
 }
 

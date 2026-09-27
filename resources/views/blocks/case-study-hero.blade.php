@@ -5,7 +5,7 @@
   $details = array_filter([
     __('Sektor', 'i4tech') => $sector,
     __('Typ projektu:', 'i4tech') => $projectType,
-    __('Przedmiot współpracy:', 'i4tech') => $cooperationSubject,
+    __('Inwestor:', 'i4tech') => $investor,
   ]);
 @endphp
 

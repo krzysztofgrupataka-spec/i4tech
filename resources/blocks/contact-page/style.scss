@@ -10,6 +10,8 @@
 .contact-page-block__information { background: linear-gradient(105deg, #fff 5%, #f2eee5 100%); }
 
 .contact-page-block__information-inner {
+  container-name: contact-information;
+  container-type: inline-size;
   inline-size: min(100% - 2rem, 41rem);
   margin-inline: auto;
   padding-block: clamp(3.5rem, 6vw, 5.625rem);
@@ -33,7 +35,7 @@
 .contact-page-block__details {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 1.15fr 1fr 1fr;
+  grid-template-columns: 1.15fr repeat(2, minmax(0, 1fr));
   margin-block-start: 2.75rem;
 }
 
@@ -58,10 +60,15 @@
 }
 
 .contact-page-block__detail img { align-self: center; display: block; max-inline-size: 1rem; }
-.contact-page-block__detail--line { align-items: center; }
+.contact-page-block__detail--line {
+  align-items: center;
+  grid-template-columns: 1rem max-content;
+  white-space: nowrap;
+}
 .contact-page-block__detail :is(a, address) { color: inherit; display: block; font-style: normal; text-decoration: none; }
 
 .contact-page-block__directions { color: var(--color-primary) !important; display: inline-block !important; font-weight: 400; margin-block-start: 0.65rem; text-decoration: underline !important; text-underline-offset: 0.2em; }
+
 @media (width < 48rem) {
   .contact-page-block { min-block-size: 0; }
   .contact-page-block__information-inner { padding-block: 3rem; }

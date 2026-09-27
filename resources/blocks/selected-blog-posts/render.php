@@ -10,9 +10,20 @@ $block_id = isset($block['anchor']) && $block['anchor']
     ? sanitize_title($block['anchor'])
     : 'selected-blog-posts-' . ($block['id'] ?? wp_unique_id());
 $block_classes = ['selected-blog-posts-block', 'alignfull'];
+$show_blog_sections = function_exists('\\App\\footer_options')
+    ? (bool) (\App\footer_options()['show_blog_sections'] ?? false)
+    : false;
 
 if (isset($block['className']) && $block['className']) {
     $block_classes[] = sanitize_html_class($block['className']);
+}
+
+if (! $show_blog_sections) {
+    if ($is_preview) {
+        echo '<p class="selected-blog-posts-block__placeholder">' . esc_html__('Sekcja bloga jest obecnie ukryta w ustawieniach motywu.', 'i4tech') . '</p>';
+    }
+
+    return;
 }
 
 if (! $heading && ! $post_ids) {

@@ -25,7 +25,7 @@
         },
         {
             "key": "field_i4tech_case_study_hero_cooperation_subject",
-            "label": "Przedmiot współpracy",
+            "label": "Inwestor",
             "name": "case_study_hero_cooperation_subject",
             "type": "text"
         },

@@ -20,7 +20,7 @@
 @endphp
 
 <section {!! get_block_wrapper_attributes(['class' => "selected-case-studies-block selected-case-studies-block--{$background} alignfull"]) !!}>
-  <x-container>
+  <x-container size="inset">
     <div class="selected-case-studies-block__header">
       @if ($heading)
         <h2 class="selected-case-studies-block__heading">
@@ -41,11 +41,14 @@
     </div>
 
     @if (! empty($caseStudyIds))
-      <div class="selected-case-studies-block__grid selected-case-studies-block__grid--count-{{ count($caseStudyIds) }}">
+      @php
+        $caseStudyCount = count($caseStudyIds);
+      @endphp
+      <div class="selected-case-studies-block__grid selected-case-studies-block__grid--count-{{ $caseStudyCount }}">
         @foreach ($caseStudyIds as $index => $caseStudyId)
           @php
-            $isFeatured = $index === 0;
-            $imageUrl = $isFeatured ? (get_the_post_thumbnail_url($caseStudyId, 'full') ?: '') : '';
+            $usesFeaturedLayout = $caseStudyCount === 1 || (($caseStudyCount === 2 || $caseStudyCount === 3) && $index === 0);
+            $imageUrl = $usesFeaturedLayout ? (get_the_post_thumbnail_url($caseStudyId, 'full') ?: '') : '';
           @endphp
 
           <x-case-study-card
@@ -53,7 +56,7 @@
             :title="get_the_title($caseStudyId)"
             :href="get_permalink($caseStudyId)"
             :image="$imageUrl ?: null"
-            :variant="$isFeatured ? 'featured' : 'compact'"
+            :variant="$usesFeaturedLayout ? 'featured' : 'compact'"
           />
         @endforeach
       </div>
